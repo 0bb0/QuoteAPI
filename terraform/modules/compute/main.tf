@@ -107,8 +107,8 @@ resource "azurerm_monitor_metric_alert" "http5xx_count" {
       values   = ["5xx"]
     }
   }
-    action {
-      action_group_id = var.action_group_id
-    }
+  action {
+    action_group_id = var.action_group_id
+  }
 }
 
