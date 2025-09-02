@@ -1,0 +1,9 @@
+variable "project" { type = string }
+variable "location" { type = string }
+variable "rg_name" { type = string }
+variable "pg_db_name" { type = string }
+variable "pg_sku_name" { type = string }
+variable "pg_storage_mb" { type = number }
+variable "pg_backup_days" { type = number }
+variable "law_id" { type = string }
+variable "operator_ip" { type = string }
