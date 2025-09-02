@@ -4,12 +4,9 @@
 Modified Dockerimage: bbhbdb/qapi:secure**
 
 **Prerequisites:**
-*Azure subscription
-*Azure CLI 
-```bash
-  az login
-  az account set --subscription <subscription-id>
-*Terraform ≥ 1.6
+- Azure subscription
+- Azure CLI 
+- Terraform ≥ 1.6
 
 **Usage:**
   make fmt                      # format all Terraform code
@@ -51,11 +48,11 @@ Key Vault: billed per 10k operations.
                                                                                                            
 
 **ASD essential eight mapping:**
-*Application control:
-*Patching apps:
-*Patching O/S: Azure maintains regular patching of container host and PostgreSQL
-*MFA: Access to Azure has MFA enabed.
-*Microsoft Office Macros: N/A
-*Application user restrictions: Runs as non-root user (appuser)
-*Privilege and access control: secrets maintained in Keyvault and access restricted
-*Backups: PostgreSQL backups maintained.
+- Application control:
+- Patching apps:
+- Patching O/S: Azure maintains regular patching of container host and PostgreSQL
+- MFA: Access to Azure has MFA enabed.
+- Microsoft Office Macros: N/A
+- Application user restrictions: Runs as non-root user (appuser)
+- Privilege and access control: secrets maintained in Keyvault and access restricted
+- Backups: PostgreSQL backups maintained.
